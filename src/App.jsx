@@ -21,7 +21,9 @@ function App() {
           </button>
         </form>
         <ul>
-          <Todo />
+          {todos.map((todo, index) => (
+            <Todo key={index} todo={todo} />
+          ))}
         </ul>
       </div>
     </div>
